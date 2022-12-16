@@ -1,6 +1,27 @@
 @import '~bootstrap/scss/bootstrap';
 
 
-body {
-    background-color: red;
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+
+header{
+  height: 350px;
+  .nav-item{
+    a{
+          text-decoration: none;
+          color:#303030;
+          font-size:0.813rem;
+    }
   }
+  .header_top{
+    height:50px;
+    background-color: #0282F9;
+    font-size:0.813rem;
+  }
+  .header_bottom{
+    .logo img{
+      max-width: 80px;
+    }
+  }
+}
