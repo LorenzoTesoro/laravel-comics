@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- Styles -->
-    @vite('resources/scss/app.scss')
+    @vite('resources/js/app.js')
 
 </head>
 
@@ -20,7 +20,9 @@
     @include('partials.header')
     <!-- /header -->
     <main>
-        @yield('content')
+        <div class="content">
+            @yield('content')
+        </div>
     </main>
     <!-- /main -->
     @include('partials.footer')

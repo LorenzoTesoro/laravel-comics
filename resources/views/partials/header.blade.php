@@ -9,8 +9,8 @@
             </div>
         </div>
     </div>
-    <div class="header_bottom">
-        <div class="container d-flex justify-content-between align-items-center py-2">
+    <div class="header_bottom  py-3">
+        <div class="container d-flex justify-content-between align-items-center">
             <div class="logo">
                 <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
             </div>

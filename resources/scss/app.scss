@@ -3,10 +3,13 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
+
+  img{
+    max-width: 100%;
+  }
 }
 
 header{
-  height: 350px;
   .nav-item{
     a{
           text-decoration: none;
@@ -24,4 +27,49 @@ header{
       max-width: 80px;
     }
   }
+}
+
+main{
+  .jumbotron{
+    height:400px;
+    background-image: url('/resources/img/jumbotron.jpg');
+    background-size: cover;
+  }
+
+  .comics{
+      background-color: #1C1C1C;
+      color:#FFFFFF;
+    .container{
+      display: flex;
+      flex-wrap: wrap;
+      padding-bottom:0.5rem;
+      position: relative;
+
+      .current_series{
+        position: absolute;
+        top: -1rem;
+        padding-inline: 1.5rem;
+      }
+  }
+    .card{
+      padding:1rem 0.75rem;
+      border:0;
+      background-color: inherit;
+      .card-img{
+        aspect-ratio: 1;
+        width: 150px;
+          &:hover{
+              cursor: pointer;
+          }
+      }
+      .card-title{
+          padding-top: 0.5rem;
+      }
+    }
+    button{
+      background-color: #0282F9;
+    }
+  }
+
+
 }
