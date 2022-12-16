@@ -34,5 +34,17 @@
 </section>
 <!-- / comics -->
 
+<section class="features">
+    <div class="container">
+        @foreach($banner_icons as $icon)
+        <div class="card_item">
+            <div class='img_container'>
+                <img src="{{ Vite::asset($icon['img'])}}" alt="">
+            </div>
+            <span>{{$icon['title']}}</span>
+        </div>
+        @endforeach
+    </div>
+</section>
 
 @endsection

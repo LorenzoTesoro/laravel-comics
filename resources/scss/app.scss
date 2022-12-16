@@ -70,6 +70,26 @@ main{
       background-color: #0282F9;
     }
   }
-
-
+  .features{
+    background-color: #0282F9;
+        .container{
+            display: flex;
+            justify-content: space-around;            padding-top:2rem;
+            padding-bottom:2rem;
+         }
+        .img_container{
+            max-width:40px;
+        }
+        .card_item{
+            display: flex;
+            align-items: center;
+            background-color: inherit;
+            span{
+                padding-left:0.5rem;
+                text-transform: uppercase;
+                font-size: 0.813rem;
+                color: #FFFFFF;
+              }
+        }
+  }
 }
