@@ -14,24 +14,72 @@ body{
     max-width: 100%;
   }
 }
-
 header{
-  .nav-item{
-    a{
-          text-decoration: none;
-          color:#303030;
-          font-size:0.813rem;
-    }
-  }
-  .header_top{
-    height:50px;
+ .header_top{
     background-color: #0282F9;
-    font-size:0.813rem;
+    height:50px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    span{
+      font-size: 0.5rem;
+      vertical-align: super;
+    }
   }
   .header_bottom{
-    .logo img{
-      max-width: 80px;
+    height:100px;
+    
+    .container{
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: space-between;
+      height: 100%;
     }
+    .logo {
+      display: flex;
+      align-items: center;
+        img{
+          width: 70px;
+        }
+    }
+    .navbar {
+      ul{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          list-style: none;
+          gap:1rem;
+      }
+      a{
+          text-decoration: none;
+          color:#303030;
+          text-transform: uppercase;
+          font-size: 0.813rem;
+          font-weight: bold;
+          &:hover{
+              color:#0282F9;
+              box-shadow: 0 4px #0282F9;
+              padding-bottom:2.9rem;
+              cursor: pointer;
+          }
+      }
+    }
+    .search_box{
+      text-align: right;
+
+      input{
+        border:none;
+        border-bottom: 2px solid #0282F9;
+        padding-left: 0.375rem;
+      }
+      input::placeholder{
+        text-align: right;
+        padding-right: 0.5rem;
+        color: #303030;
+      }
+    }
+
   }
 }
 /* /. header styles */

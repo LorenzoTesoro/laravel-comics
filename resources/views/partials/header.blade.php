@@ -2,54 +2,63 @@
     <div class="header_top">
         <div class="container d-flex justify-content-end">
             <div class='text-uppercase text-white pe-2'>
-                dc power <span>sm</span>
+                dc power <span>sm</span> visa &reg;
             </div>
             <div class='text-uppercase text-white'>
-                additional dc sites
+                additional dc sites &triangledown;
             </div>
         </div>
     </div>
-    <div class="header_bottom  py-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
+    <!-- /. header_top -->
+
+    <div class="header_bottom">
+        <div class="container">
+            <div class="col flex-fill">
+                <div class="logo">
+                    <img src="{{ Vite::asset('resources/img/dc-logo.png')}}" alt="">
+                </div>
             </div>
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Characters</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Comics</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Movies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">TV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Games</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Collectibles</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Videos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fans</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">News</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Shop</a>
-                    </li>
-                </ul>
-            </nav>
-            <input type="search" name="" id="" placeholder="Search">
-            <!-- Todo: add icon  -->
+            <!-- ./ logo -->
+            <div class="col flex-fill">
+                <nav class="navbar">
+                    <ul>
+                        <li>
+                            <a href="#">characters</a>
+                        </li>
+                        <li>
+                            <a href="#">comics</a>
+                        </li>
+                        <li>
+                            <a href="#">movies</a>
+                        </li>
+                        <li>
+                            <a href="#">tv</a>
+                        </li>
+                        <li>
+                            <a href="#">games</a>
+                        </li>
+                        <li>
+                            <a href="#">collectibles</a>
+                        </li>
+                        <li>
+                            <a href="#">videos</a>
+                        </li>
+                        <li>
+                            <a href="#">fans</a>
+                        </li>
+                        <li>
+                            <a href="#">news</a>
+                        </li>
+                        <li>
+                            <a href="#">shop <span>&triangledown;</span></a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- /. navbar -->
+            </div>
+            <div class="col search_box flex-fill">
+                <input type="search" placeholder="Search &#128269;">
+            </div>
         </div>
     </div>
 </header>
