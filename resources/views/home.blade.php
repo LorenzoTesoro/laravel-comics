@@ -5,7 +5,7 @@
 
 <section class="jumbotron">
 </section>
-<!-- / jumbotron -->
+<!-- /. jumbotron -->
 
 <section class="comics">
     <div class="container pt-5">
@@ -32,7 +32,7 @@
 
     </div>
 </section>
-<!-- / comics -->
+<!-- /. comics -->
 
 <section class="features">
     <div class="container">
@@ -46,5 +46,5 @@
         @endforeach
     </div>
 </section>
-
+<!-- /. features -->
 @endsection

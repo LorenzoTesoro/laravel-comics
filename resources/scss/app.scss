@@ -3,7 +3,13 @@
 
 body{
   font-family: 'Open Sans', sans-serif;
-
+  ul{
+    list-style: none;
+    padding-left: 0px;
+  }
+  a{
+    text-decoration: none;
+  }
   img{
     max-width: 100%;
   }
@@ -28,7 +34,7 @@ header{
     }
   }
 }
-
+/* /. header styles */
 main{
   .jumbotron{
     height:400px;
@@ -92,4 +98,101 @@ main{
               }
         }
   }
+}
+/* /. main styles */
+
+footer{
+.footer_top{
+  background-image: url('/resources/img/footer-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  .container{
+      gap:2rem;
+      background-image: url('/resources/img/dc-logo-bg.png');
+      background-repeat: no-repeat;
+      background-position: right;
+
+      .row{
+        gap:1.5rem;
+      }
+      .col{
+          padding-top:2.5rem;
+          padding-bottom:2.5rem;
+      }
+  }
+  h4{
+      text-transform: uppercase;
+      padding-bottom:1rem;
+      color:white;
+  }
+  a{
+      font-size: 0.70rem;
+      color:#959595;
+      padding-top:0.25rem;
+      padding-bottom:0.25rem;
+
+      &:hover{
+          color:#0282F9;
+      }
+  }
+  .shop{
+      margin-top:1rem;
+  }
+  .rights{
+    color:#959595;
+    font-size: 0.70rem;
+    a{
+      color: #0282F9;
+    }
+  }
+ 
+}
+.footer_bottom{
+  background-color: #303030;
+  padding-top:2rem;
+  padding-bottom:2rem;
+
+  .container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      a{
+          text-transform: uppercase;
+          color:white;
+          background-color:#303030;
+          padding: 0.75rem 0.65rem;
+          border: 2px solid #0282F9;
+
+          &:hover{
+              background-color: #0282F9;
+              cursor: pointer;
+          }
+      }
+
+      .follow{
+          text-transform: uppercase;
+          color:#0C7CEC;
+          font-weight: bold;
+      }
+      .social{
+          display: flex;
+          align-items: center;
+
+          .follow{
+              padding-right: 1rem;
+          }
+          img{
+              background-color:$dark;
+              aspect-ratio: 1;
+              border-radius: 50%;
+              width:30px;
+              margin-inline: 0.5rem;
+          }
+
+      }
+  }
+}
 }
